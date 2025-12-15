@@ -1,0 +1,7 @@
+{
+  "name": "NutriDecode AI",
+  "description": "Scan food labels to get instant wellness scores and ingredient analysis using AI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nutridecode-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        # Pass the environment variable to the build context
+        - GEMINI_API_KEY=${GEMINI_API_KEY}
+    container_name: nutridecode-app
+    ports:
+      - "8080:80"
+    restart: always
+    environment:
+      - NODE_ENV=production

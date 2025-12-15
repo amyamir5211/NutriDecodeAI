@@ -1,0 +1,58 @@
+{
+  "ingredients": {
+    "sugar": {
+      "status": "permitted",
+      "type": "ingredient",
+      "penalty_score": 2,
+      "clause": "FSSAI 2.1"
+    },
+    "water": {
+      "status": "permitted",
+      "type": "ingredient",
+      "penalty_score": 0,
+      "clause": "FSSAI 2.1"
+    },
+    "monosodium glutamate": {
+      "status": "restricted",
+      "type": "additive",
+      "penalty_score": 6,
+      "clause": "FSSAI 2.2.1:1"
+    },
+    "e621": {
+      "status": "restricted",
+      "type": "additive",
+      "penalty_score": 6,
+      "clause": "FSSAI 2.2.1:1"
+    },
+    "tartrazine": {
+      "status": "restricted",
+      "type": "additive",
+      "penalty_score": 6,
+      "clause": "FSSAI 2.3.1"
+    },
+    "potassium bromate": {
+      "status": "prohibited",
+      "type": "additive",
+      "penalty_score": 10,
+      "clause": "FSSAI Notification 2016"
+    },
+    "caffeine": {
+      "status": "restricted",
+      "type": "ingredient",
+      "penalty_score": 6,
+      "clause": "FSSAI 2.4.5 (34)"
+    },
+    "sodium benzoate": {
+      "status": "permitted",
+      "type": "additive",
+      "penalty_score": 3,
+      "clause": "FSSAI 2.3.2"
+    }
+  },
+  "claims_rules": {
+    "immunity": { "type": "unsupported_functional", "penalty": 5, "clause": "FSSAI Advertising Reg 4.0" },
+    "cures": { "type": "disease_prevention", "penalty": 10, "clause": "FSSAI Advertising Reg 7.1" },
+    "healthiest": { "type": "unsupported_functional", "penalty": 5, "clause": "FSSAI Advertising Reg 4.0" },
+    "grow tall": { "type": "unsupported_nutrient", "penalty": 3, "clause": "FSSAI Advertising Reg 5.2" }
+  }
+}
