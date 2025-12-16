@@ -12,7 +12,7 @@ import { IngredientAnalysis, ScanHistoryItem, AppView } from './types';
 
 // Moved SafeAreaWrapper outside of App component to avoid TypeScript errors and recreation on render
 const SafeAreaWrapper = ({ children }: { children?: React.ReactNode }) => (
-  <div className="min-h-screen bg-gray-50 pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
+  <div className="min-h-screen bg-[#F9F5EB] pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
     {children}
   </div>
 );
@@ -274,19 +274,10 @@ const App: React.FC = () => {
 
   // Home View
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col max-w-md mx-auto relative overflow-hidden pt-[env(safe-area-inset-top)]">
+    <div className="min-h-screen bg-[#F9F5EB] flex flex-col max-w-md mx-auto relative overflow-hidden pt-[env(safe-area-inset-top)]">
       {/* Decorative Background Elements */}
       <div className="absolute top-[-100px] right-[-50px] w-64 h-64 bg-green-200 rounded-full blur-3xl opacity-30 pointer-events-none"></div>
       <div className="absolute bottom-[-50px] left-[-50px] w-64 h-64 bg-blue-200 rounded-full blur-3xl opacity-30 pointer-events-none"></div>
-
-      {/* Eat Right India Logo */}
-      <div className="absolute top-4 left-4 z-10 pt-[env(safe-area-inset-top)]">
-        <img
-          src="/eat_right_india.png"
-          alt="Eat Right India Initiative"
-          className="h-12 w-auto object-contain mix-blend-multiply opacity-90"
-        />
-      </div>
 
       <div className="absolute top-4 right-4 z-10 pt-[env(safe-area-inset-top)] flex gap-2">
         {deferredPrompt && (
@@ -354,9 +345,9 @@ const App: React.FC = () => {
           </button>
           <div className="mt-3 mb-2">
             <img
-              src="/fssai_logo.png"
-              alt="FSSAI Logo"
-              className="h-8 w-auto object-contain opacity-80 mx-auto"
+              src="/know_what_you_eat.jpg"
+              alt="Know What You Eat"
+              className="h-20 w-auto object-contain rounded-[15%] shadow-lg shadow-gray-400 mx-auto"
             />
           </div>
           <div className="text-[10px] text-gray-400 text-center max-w-xs px-2 opacity-80">
